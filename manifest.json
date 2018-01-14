@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "View Page on Phone",
+  "description": "This extension generate a qr code for the current viewing url and allows the user to scan using a phone.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+  ]
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>View This Page on Phone</title>
+    <style type="text/css">
+      body {
+        white-space: nowrap;
+      }
+
+      #qrcode {
+        width:192px;
+        height:192px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+    <script src="jquery.min.js"></script>
+    <script src="qrcode.js"></script>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <div id="qrcode"></div>
+  </body>
+</html>
